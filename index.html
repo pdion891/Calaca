@@ -28,12 +28,15 @@
   <section class='results'>
     <p class='no-results' ng-show='!results.length && !loading'>No Results</p>
     <article class='result' ng-repeat='result in results track by $id(result)'>
+    <table width="100%"><tr><td class="colunn">
       <h2>{{result.key}}</h2>
-      <p>gameid:{{result.gameid}}</p>
-      <p>size:{{result.content_length}}B</p>
-      <p> width: {{result.width}}, height: {{result.height}}</p>
-      <p>last modified:{{result.last_modified}}</p>
-      <p><A href="{{result.public_url}}">{{result.public_url}}</A></p>
+      gameid:{{result.gameid}}<br>
+      content_length:{{result.content_length}}B<br>
+      width: {{result.width}}, height: {{result.height}}<br>
+      last modified:{{result.last_modified}}<br>
+      </td><td>
+     <A href="{{result.public_url}}"><img class="thumbnail" src="{{result.public_url}}"></A>
+     </td></tr></table>
     </article>
   </section>
   <section class='pagination-controls'>

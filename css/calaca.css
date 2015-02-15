@@ -108,14 +108,14 @@ body {
   height: 30px;
   width: 75px;
   border-radius: 25px;
-  background-color: #ed4877;
+  background-color: blue;
   border: none;
   color: #fff;
   margin: 5px;ch
 }
 .pager:hover {
   cursor: pointer;
-  background-color: #d62256;
+  background-color: green;
 }
 .pager:focus {
   outline:0;
@@ -160,3 +160,13 @@ body {
   opacity:0;
 }
 /* ng-repeat animation */
+
+.thumbnail {
+    width: 60px;
+    height: 70px;
+    margin: 0px;
+}
+
+.colunn {
+  vertical-align: top;
+}
